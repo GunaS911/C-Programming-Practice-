@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <string.h>
+
 int main(){
 	int ls[10];
 	int a;
 	int t;
 	printf("Enter your ten numbers: \n");
 	for(int i =0;i<10;i++){
-		scanf("%d",&ls[i]);
+		scanf("%d",&ls[i])
 	}
 	int asc[10];int des[10];
 	for(int i=0;i<10;i++){
