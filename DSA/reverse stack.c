@@ -1,23 +1,23 @@
 #include <stdio.h>
 #define MAX 5
-int queue[MAX];
+int stack[MAX];
 int top =MAX;
 int insert(int value)
 {
 	if (top==0){
-		printf("The queue is full");
+		printf("The stack is full");
 	}
 	else{
-		queue[--top]=value;
-		printf("%d inserted into the queue\n",value);
+		stack[--top]=value;
+		printf("%d inserted into the stack\n",value);
 	}
 }
 int delete(){
 	if(top==MAX){
-		printf("The queue is full");
+		printf("The stack is full");
 	}
 	else{
-		printf("%d Deleted from queue\n",queue[top++]);
+		printf("%d Deleted from stack\n",stack[top++]);
 	}
 }
 int main(){
